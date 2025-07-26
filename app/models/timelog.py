@@ -1,4 +1,4 @@
-from . import db
+from app.extension import db
 from datetime import datetime
 
 class TimeLog(db.Model):
