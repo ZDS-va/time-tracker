@@ -4,8 +4,8 @@ __pycache__/
 
 # Virtual environments
 venv/
-env/
-ENV/
+.env/
+.env/
 
 # Flask environment and database files
 *.sqlite3
