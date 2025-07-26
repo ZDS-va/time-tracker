@@ -1,6 +1,30 @@
-.idea/
-
+# Python bytecode
 __pycache__/
 *.py[cod]
+
+# Virtual environments
 venv/
+env/
+ENV/
+
+# Flask environment and database files
+*.sqlite3
+*.db
 .env
+.env_db
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Docker Compose override
+docker-compose.override.yml
