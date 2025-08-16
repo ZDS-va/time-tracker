@@ -2,7 +2,10 @@ from flask import Flask
 from .config import Config
 from .extension import db, cors
 from .api import init_app as init_api
+from flask_migrate import Migrate
 # from .api.user_api import bp as user_bp  # 若启用认证
+
+migrate = Migrate()
 
 def create_app():
     app = Flask(__name__)
@@ -11,6 +14,7 @@ def create_app():
     # 初始化扩展
     db.init_app(app)
     cors.init_app(app)
+    migrate.init_app(app, db)
 
     # 注册api
     init_api(app)
